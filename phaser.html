@@ -116,18 +116,7 @@
                            console.error(error)
                          }
                         })
-                      $.ajax({
-                        url: "./inc/highscores.php",
-                        async: false,
-
-                        success: function(result){
-                          var data = JSON.parse(result);
-                          for(i in data){
-                            currentscores[i] = data[i];
-
-                          }
-                        }
-                      });
+                      
 
                         this.add.image(400, 300, 'sky');
 
