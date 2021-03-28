@@ -14,6 +14,6 @@ $highscores[$name] = $score;
 $file = "highscores.txt";
 file_put_contents($file, json_encode($highscores), LOCK_EX);
 }
-arsort($highscores);
+arsort($highscores); 
 echo json_encode($highscores);
 ?>
